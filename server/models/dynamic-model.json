@@ -1,0 +1,47 @@
+{
+  "name": "DynamicModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "base": {
+      "type": "string",
+      "required": true,
+      "default": "PersistedModel"
+    },
+    "idInjection": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "options": {
+      "type": "object"
+    },
+    "properties": {
+      "type": "object"
+    },
+    "validations": {
+      "type": [
+        "object"
+      ]
+    },
+    "relations": {
+      "type": "object"
+    },
+    "acls": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
